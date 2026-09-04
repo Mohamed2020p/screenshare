@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000001 /* StarPlayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002A /* StarPlayApp.swift */; };
+		000000000000000000000002 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002B /* AppModel.swift */; };
+		000000000000000000000003 /* BroadcastPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002C /* BroadcastPickerView.swift */; };
+		000000000000000000000004 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002D /* HomeView.swift */; };
+		000000000000000000000005 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002E /* NetworkMonitor.swift */; };
+		000000000000000000000006 /* PermissionCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002F /* PermissionCenter.swift */; };
+		000000000000000000000007 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000030 /* RootView.swift */; };
+		000000000000000000000008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000031 /* SettingsView.swift */; };
+		000000000000000000000009 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* Theme.swift */; };
+		00000000000000000000000A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000037 /* AppConstants.swift */; };
+		00000000000000000000000B /* H264VideoEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000038 /* H264VideoEncoder.swift */; };
+		00000000000000000000000C /* PixelBufferScaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000039 /* PixelBufferScaler.swift */; };
+		00000000000000000000000D /* SharedStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003A /* SharedStateStore.swift */; };
+		00000000000000000000000E /* StreamModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003B /* StreamModels.swift */; };
+		00000000000000000000000F /* StreamWireProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003C /* StreamWireProtocol.swift */; };
+		000000000000000000000010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000041 /* Assets.xcassets */; };
+		000000000000000000000011 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* ReplayKit.framework */; };
+		000000000000000000000012 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000043 /* Network.framework */; };
+		000000000000000000000013 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* VideoToolbox.framework */; };
+		000000000000000000000014 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000045 /* CoreMedia.framework */; };
+		000000000000000000000015 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000046 /* CoreVideo.framework */; };
+		000000000000000000000016 /* StarPlayBroadcast.appex in PlugIns */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* StarPlayBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		000000000000000000000060 /* ModernScreenCaptureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* ModernScreenCaptureController.swift */; };
+		000000000000000000000061 /* VideoStreamSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* VideoStreamSession.swift */; };
+		000000000000000000000062 /* BonjourStreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000035 /* BonjourStreamServer.swift */; };
+		000000000000000000000063 /* StreamConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* StreamConnection.swift */; };
+
+		000000000000000000000017 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* SampleHandler.swift */; };
+		000000000000000000000018 /* BroadcastSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000034 /* BroadcastSession.swift */; };
+		000000000000000000000019 /* BonjourStreamServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000035 /* BonjourStreamServer.swift */; };
+		00000000000000000000001A /* StreamConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* StreamConnection.swift */; };
+		00000000000000000000001B /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000037 /* AppConstants.swift */; };
+		00000000000000000000001C /* H264VideoEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000038 /* H264VideoEncoder.swift */; };
+		00000000000000000000001D /* PixelBufferScaler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000039 /* PixelBufferScaler.swift */; };
+		00000000000000000000001E /* SharedStateStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003A /* SharedStateStore.swift */; };
+		00000000000000000000001F /* StreamModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003B /* StreamModels.swift */; };
+		000000000000000000000020 /* StreamWireProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003C /* StreamWireProtocol.swift */; };
+		000000000000000000000021 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000043 /* Network.framework */; };
+		000000000000000000000022 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* ReplayKit.framework */; };
+		000000000000000000000023 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* VideoToolbox.framework */; };
+		000000000000000000000024 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000045 /* CoreMedia.framework */; };
+		000000000000000000000025 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000000000000000000000046 /* CoreVideo.framework */; };
+		000000000000000000000064 /* VideoStreamSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* VideoStreamSession.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		000000000000000000000026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000052 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000051;
+			remoteInfo = StarPlayBroadcast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		000000000000000000000027 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				000000000000000000000016 /* StarPlayBroadcast.appex in PlugIns */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000028 /* StarPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000029 /* StarPlayBroadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StarPlayBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		00000000000000000000002A /* StarPlayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarPlayApp.swift; sourceTree = "<group>"; };
+		00000000000000000000002B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		00000000000000000000002C /* BroadcastPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastPickerView.swift; sourceTree = "<group>"; };
+		00000000000000000000002D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		00000000000000000000002E /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		00000000000000000000002F /* PermissionCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCenter.swift; sourceTree = "<group>"; };
+		000000000000000000000030 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		000000000000000000000031 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		000000000000000000000033 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		000000000000000000000034 /* BroadcastSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSession.swift; sourceTree = "<group>"; };
+		000000000000000000000035 /* BonjourStreamServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourStreamServer.swift; sourceTree = "<group>"; };
+		000000000000000000000036 /* StreamConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamConnection.swift; sourceTree = "<group>"; };
+		000000000000000000000037 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		000000000000000000000038 /* H264VideoEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H264VideoEncoder.swift; sourceTree = "<group>"; };
+		000000000000000000000039 /* PixelBufferScaler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelBufferScaler.swift; sourceTree = "<group>"; };
+		00000000000000000000003A /* SharedStateStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateStore.swift; sourceTree = "<group>"; };
+		00000000000000000000003B /* StreamModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamModels.swift; sourceTree = "<group>"; };
+		00000000000000000000003C /* StreamWireProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamWireProtocol.swift; sourceTree = "<group>"; };
+		00000000000000000000003D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00000000000000000000003E /* Broadcast Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00000000000000000000003F /* StarPlay.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarPlay.entitlements; sourceTree = "<group>"; };
+		000000000000000000000040 /* StarPlayBroadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StarPlayBroadcast.entitlements; sourceTree = "<group>"; };
+		000000000000000000000041 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000042 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		000000000000000000000043 /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		000000000000000000000044 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		000000000000000000000045 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		000000000000000000000046 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		000000000000000000000065 /* ModernScreenCaptureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModernScreenCaptureController.swift; sourceTree = "<group>"; };
+		000000000000000000000066 /* VideoStreamSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoStreamSession.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000047 /* StarPlay Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000011 /* ReplayKit.framework in Frameworks */,
+				000000000000000000000012 /* Network.framework in Frameworks */,
+				000000000000000000000013 /* VideoToolbox.framework in Frameworks */,
+				000000000000000000000014 /* CoreMedia.framework in Frameworks */,
+				000000000000000000000015 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000048 /* StarPlayBroadcast Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000021 /* Network.framework in Frameworks */,
+				000000000000000000000022 /* ReplayKit.framework in Frameworks */,
+				000000000000000000000023 /* VideoToolbox.framework in Frameworks */,
+				000000000000000000000024 /* CoreMedia.framework in Frameworks */,
+				000000000000000000000025 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000049 /* StarPlay project group */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000004A /* StarPlay */,
+				00000000000000000000004B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00000000000000000000004A /* StarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000004C /* App */,
+				00000000000000000000004D /* Shared */,
+				00000000000000000000004E /* BroadcastExtension */,
+				00000000000000000000004F /* Resources */,
+				00000000000000000000003D /* Info.plist */,
+				00000000000000000000003F /* StarPlay.entitlements */,
+			);
+			path = StarPlay;
+			sourceTree = "<group>";
+		};
+		00000000000000000000004B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000028 /* StarPlay.app */,
+				000000000000000000000029 /* StarPlayBroadcast.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00000000000000000000004C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002A /* StarPlayApp.swift */,
+				00000000000000000000002B /* AppModel.swift */,
+				00000000000000000000002C /* BroadcastPickerView.swift */,
+				00000000000000000000002D /* HomeView.swift */,
+				00000000000000000000002E /* NetworkMonitor.swift */,
+				00000000000000000000002F /* PermissionCenter.swift */,
+				000000000000000000000030 /* RootView.swift */,
+				000000000000000000000031 /* SettingsView.swift */,
+				000000000000000000000032 /* Theme.swift */,
+				000000000000000000000065 /* ModernScreenCaptureController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		00000000000000000000004D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000037 /* AppConstants.swift */,
+				000000000000000000000038 /* H264VideoEncoder.swift */,
+				000000000000000000000039 /* PixelBufferScaler.swift */,
+				00000000000000000000003A /* SharedStateStore.swift */,
+				00000000000000000000003B /* StreamModels.swift */,
+				00000000000000000000003C /* StreamWireProtocol.swift */,
+				000000000000000000000066 /* VideoStreamSession.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		00000000000000000000004E /* BroadcastExtension */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000033 /* SampleHandler.swift */,
+				000000000000000000000034 /* BroadcastSession.swift */,
+				000000000000000000000035 /* BonjourStreamServer.swift */,
+				000000000000000000000036 /* StreamConnection.swift */,
+				00000000000000000000003E /* Broadcast Info.plist */,
+				000000000000000000000040 /* StarPlayBroadcast.entitlements */,
+			);
+			path = BroadcastExtension;
+			sourceTree = "<group>";
+		};
+		00000000000000000000004F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000041 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000050 /* StarPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000005D /* Build configuration list for StarPlay */;
+			buildPhases = (
+				000000000000000000000047 /* StarPlay Frameworks */,
+				000000000000000000000054 /* StarPlay Sources */,
+				000000000000000000000053 /* StarPlay Resources */,
+				000000000000000000000027 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				000000000000000000000056 /* StarPlayBroadcast */,
+			);
+			name = StarPlay;
+			productName = StarPlay;
+			productReference = 000000000000000000000028 /* StarPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000051 /* StarPlayBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000005E /* Build configuration list for StarPlayBroadcast */;
+			buildPhases = (
+				000000000000000000000048 /* StarPlayBroadcast Frameworks */,
+				000000000000000000000055 /* StarPlayBroadcast Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StarPlayBroadcast;
+			productName = StarPlayBroadcast;
+			productReference = 000000000000000000000029 /* StarPlayBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000052 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					000000000000000000000050 = { CreatedOnToolsVersion = 26.0; };
+					000000000000000000000051 = { CreatedOnToolsVersion = 26.0; };
+				};
+			};
+			buildConfigurationList = 00000000000000000000005F /* Build configuration list for PBXProject */;
+			compatibilityVersion = "Xcode 16.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000049;
+			productRefGroup = 00000000000000000000004B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000050 /* StarPlay */,
+				000000000000000000000051 /* StarPlayBroadcast */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000053 /* StarPlay Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000010 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000054 /* StarPlay Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000001 /* StarPlayApp.swift in Sources */,
+				000000000000000000000002 /* AppModel.swift in Sources */,
+				000000000000000000000003 /* BroadcastPickerView.swift in Sources */,
+				000000000000000000000004 /* HomeView.swift in Sources */,
+				000000000000000000000005 /* NetworkMonitor.swift in Sources */,
+				000000000000000000000006 /* PermissionCenter.swift in Sources */,
+				000000000000000000000007 /* RootView.swift in Sources */,
+				000000000000000000000008 /* SettingsView.swift in Sources */,
+				000000000000000000000009 /* Theme.swift in Sources */,
+				00000000000000000000000A /* AppConstants.swift in Sources */,
+				00000000000000000000000B /* H264VideoEncoder.swift in Sources */,
+				00000000000000000000000C /* PixelBufferScaler.swift in Sources */,
+				00000000000000000000000D /* SharedStateStore.swift in Sources */,
+				00000000000000000000000E /* StreamModels.swift in Sources */,
+				00000000000000000000000F /* StreamWireProtocol.swift in Sources */,
+				000000000000000000000060 /* ModernScreenCaptureController.swift in Sources */,
+				000000000000000000000061 /* VideoStreamSession.swift in Sources */,
+				000000000000000000000062 /* BonjourStreamServer.swift in Sources */,
+				000000000000000000000063 /* StreamConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000055 /* StarPlayBroadcast Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000017 /* SampleHandler.swift in Sources */,
+				000000000000000000000018 /* BroadcastSession.swift in Sources */,
+				000000000000000000000019 /* BonjourStreamServer.swift in Sources */,
+				00000000000000000000001A /* StreamConnection.swift in Sources */,
+				00000000000000000000001B /* AppConstants.swift in Sources */,
+				00000000000000000000001C /* H264VideoEncoder.swift in Sources */,
+				00000000000000000000001D /* PixelBufferScaler.swift in Sources */,
+				00000000000000000000001E /* SharedStateStore.swift in Sources */,
+				00000000000000000000001F /* StreamModels.swift in Sources */,
+				000000000000000000000020 /* StreamWireProtocol.swift in Sources */,
+				000000000000000000000064 /* VideoStreamSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		000000000000000000000056 /* StarPlayBroadcast */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000051 /* StarPlayBroadcast */;
+			targetProxy = 000000000000000000000026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		000000000000000000000058 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		000000000000000000000059 /* StarPlay Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StarPlay/StarPlay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c0derz.starplay;
+				PRODUCT_NAME = StarPlay;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000005A /* StarPlay Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = StarPlay/StarPlay.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c0derz.starplay;
+				PRODUCT_NAME = StarPlay;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		00000000000000000000005B /* StarPlayBroadcast Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = StarPlay/BroadcastExtension/StarPlayBroadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarPlay/BroadcastExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c0derz.starplay.broadcast;
+				PRODUCT_NAME = StarPlayBroadcast;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000005C /* StarPlayBroadcast Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = StarPlay/BroadcastExtension/StarPlayBroadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = StarPlay/BroadcastExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.c0derz.starplay.broadcast;
+				PRODUCT_NAME = StarPlayBroadcast;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000005D /* Build configuration list for StarPlay */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000059 /* StarPlay Debug */,
+				00000000000000000000005A /* StarPlay Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000005E /* Build configuration list for StarPlayBroadcast */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000005B /* StarPlayBroadcast Debug */,
+				00000000000000000000005C /* StarPlayBroadcast Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000005F /* Build configuration list for PBXProject */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000057 /* Debug */,
+				000000000000000000000058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000052 /* Project object */;
+}

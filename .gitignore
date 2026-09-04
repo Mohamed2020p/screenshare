@@ -1,0 +1,12 @@
+# Xcode user state and local build products
+.DS_Store
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+
+# Bitrise and local signing artifacts
+bitrise.yml.bak
+*.mobileprovision
+*.cer
+*.p12
