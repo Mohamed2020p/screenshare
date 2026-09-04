@@ -82,7 +82,7 @@ The Xcode project and scheme are intentionally named `StarPlay` to match the req
 6. Build and install on a physical iPhone.
 7. Run the app, allow Local Network access, start the future receiver on the same Wi-Fi network, and tap Start mirroring. Accept the system screen broadcast prompt.
 
-The supplied Bitrise workflow performs an unsigned archive for compilation and packages the resulting app as `StarPlay.ipa`. An unsigned IPA cannot be installed on a normal iPhone. Device testing and distribution require an Apple Developer team, matching provisioning profiles, and correctly signed application-group entitlements. The workflow is suitable for validating that the project archives on the requested `osx-xcode-26.5` stack; configure signing in Bitrise for a deployable IPA.
+The supplied Bitrise workflow performs an unsigned archive for compilation and packages the resulting app as `StarPlay.ipa`. An unsigned IPA cannot be installed on a normal iPhone. Device testing and distribution require an Apple Developer team, matching provisioning profiles, and correctly signed application-group entitlements. The workflow is suitable for validating that the project archives on the requested Xcode 26.5 stack (`osx-xcode-26.5.x`); configure signing in Bitrise for a deployable IPA.
 
 ## Receiver discovery and connection contract
 
